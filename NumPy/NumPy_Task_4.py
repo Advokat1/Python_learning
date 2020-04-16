@@ -26,7 +26,9 @@ for j in range(0, 10):
 #NumPy
 #задаем массив координат
 points = np.random.random((n,2))
-
+enter = points**2
+enter = enter.sum(axis=1)
+print(enter)
 for item in range(len(enter)):
     enter[item] = sqrt(enter[item]) <=1
 
